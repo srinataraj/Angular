@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div id = "heading">
+  <h1>
+    Welcome to {{ title |uppercase }}!
+  </h1>
+</div>
+  <h4>
+    {{name |uppercase}}!!!! is learning angular!
+  </h4> 
+  <h5> Number addition</h5>
+  {{(num1+num2) | currency:'INR'}}
+  <h1>Current date</h1>
+  {{displayDate()}}
+  <h2>we are from one family {{name}}</h2>
+<div>
+  <app-family></app-family>
+</div>
+Shop:
+<a routerLink = "/catalog">catalog</a>
+<a routerLink = "/product">Product</a>
+<a routerLink = "/todo">Task</a>
+<a routerLink = "/remote">RemoteCall</a>
+<router-outlet></router-outlet>
+</div>
+
+
